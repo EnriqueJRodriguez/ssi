@@ -1,8 +1,8 @@
-# ************DE VIAJE SIN PASAPORTE**************
+# DE VIAJE SIN PASAPORTE
 
 Query to select the users and output the result to a file, tuples only
 
-select uo from alumnos_ssi_20182019 where pl='PL-08' and not uo='uo258654' \t \o pl8;
+	select uo from alumnos_ssi_20182019 where pl='PL-08' and not uo='uo258654' \t \o pl8;
 
 ## Ejercicio 1
 
