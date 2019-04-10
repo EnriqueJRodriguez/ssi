@@ -24,11 +24,11 @@ Preguntará por un nombre e email. Como contraseña se pondrá _software_ . Para
 
 Y para importarlo:
 
-  gpg --import miClavePublica.asc
+	gpg --import miClavePublica.asc
 
 
 ## Cifrar y enviar un documento
-Ciframos el documneto __somier.txt__ mediante el comando:
+Ciframos el documneto _somier.txt_ mediante el comando:
 
 	 gpg --output somier.gpg --encrypt --recipient nombre somier.txt
 
