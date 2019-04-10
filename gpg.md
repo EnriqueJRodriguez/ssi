@@ -5,8 +5,8 @@ Ciframos el archivo con el comando:
 
 	gpg --symmetric --cipher-algo AES256 file.txt
 
-Y se nos pedirá una clave, habiendo escogido en este caso __somier__ .
-Ahora, después de recuperar el archivo, lo desciframos usando
+Y se nos pedirá una clave, habiendo escogido en este caso _somier_ .
+Ahora, después de recuperar el archivo, lo desciframos usando:
 
        gpg -o ElSecreto.txt -d ElSecrehtoh.txt.gpg
        
@@ -18,7 +18,7 @@ Generamos las claves (y el certificado de revocación) con el comando:
 	  gpg --gen-key
 	  gpg --output certificadoRev.asc --gen-revoke nombre
 
-Preguntará por un nombre e email. Como contraseña se pondrá __software__ . Para exportarlo, se usa el comando:
+Preguntará por un nombre e email. Como contraseña se pondrá _software_ . Para exportarlo, se usa el comando:
 
 	   gpg --export --armor nombre > miClavePublica.asc
 
@@ -38,11 +38,14 @@ Para descifrarlo se usa el comando:
 
 ## Firmar y verificar firmas
 
-Procedemos a firmar uno de los documentos ( __patata.txt__ ):
+Procedemos a firmar uno de los documentos ( _patata.txt_ ):
 
 	   gpg --output patata.sig --sign patata.txt
 
 
 ## Referencias
-Encriptación asimértrica: https://www.gnupg.org/gph/en/manual/x110.html
-Generar claves pública/privada y cert: https://www.gnupg.org/gph/en/manual/c14.html
+* Encriptación asimértrica: https://www.gnupg.org/gph/en/manual/x110.html
+
+* Generar claves pública/privada y cert: https://www.gnupg.org/gph/en/manual/c14.html
+
+* Firmar y comprobar firmas: https://www.gnupg.org/gph/en/manual/x135.html
